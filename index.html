@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FitLife</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+        </ul>
+    </nav>
+    <div class="texto">
+        <h2>O que é o IMC?</h2>
+        <p>
+            O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está dentro do peso ideal em relação à sua altura. O IMC é calculado dividindo o peso da pessoa em quilogramas (kg) pela altura em metros (m) elevada ao quadrado. A fórmula é:
+        </p>
+        <p>
+            <strong>IMC = peso (kg) / (altura (m) x altura (m))</strong>
+        </p>
+        <p>
+            Com base no valor do IMC, pode-se classificar o estado nutricional da pessoa em categorias, como abaixo do peso, peso normal, sobrepeso e obesidade. Essas categorias ajudam a identificar possíveis riscos à saúde relacionados ao peso.
+        </p>
+    </div>
+    <div id="calculadora-div">
+        <section id="calculadora">
+            <form id="formulario">
+                <h1 id="titulo">Calculadora FitLife - IMC</h1>
+                <div class="caixa-entrada">
+                    <label for="peso"> Peso em kg </label>
+                    <div class="campo-entrada">
+                        <input type="number" id="peso" name="peso" required />
+                        <span> Kg </span>
+                    </div>
+                </div>
+                <div class="caixa-entrada">
+                    <label for="altura"> Altura em metros </label>
+                    <div class="campo-entrada">
+                        <input type="number" step="0.01" id="altura" name="altura" required />
+                        <span> m </span>
+                    </div>
+                </div>
+                <button id="calcular">Calcular</button>
+            </form>
+            <div id="informacoes" class="escondido">
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="valor"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="calculo.js"></script>
+</body>
+</html>
